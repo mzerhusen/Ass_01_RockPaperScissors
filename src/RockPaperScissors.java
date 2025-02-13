@@ -18,7 +18,7 @@ public class RockPaperScissors
             //Get Player One input
             do
             {
-                System.out.println("Player One, please select 'R' for Rock, 'P' for Paper, or 'S' for Scissors: ");
+                System.out.print("Player One, please select 'R' for Rock, 'P' for Paper, or 'S' for Scissors: ");
                 playerOne = in.nextLine();
                 playerOne = playerOne.toUpperCase();
                 if(playerOne.equals("R") || playerOne.equals("P") || playerOne.equals("S"))
@@ -35,7 +35,7 @@ public class RockPaperScissors
             //Get Player Two input
             do
             {
-                System.out.println("Player two, please select 'R' for Rock, 'P' for Paper, or 'S' for Scissors: ");
+                System.out.print("Player two, please select 'R' for Rock, 'P' for Paper, or 'S' for Scissors: ");
                 playerTwo = in.nextLine();
                 playerTwo = playerTwo.toUpperCase();
                 if(playerTwo.equals("R") || playerTwo.equals("P") || playerTwo.equals("S"))
@@ -55,27 +55,27 @@ public class RockPaperScissors
                 if(playerTwo.equals("R"))
                     System.out.println("Both players selected Rock. It's a tie!");
                 else if(playerTwo.equals("P"))
-                    System.out.println("Player One selected Rock, Player Two selected Paper. Player Two wins!");
+                    System.out.println("Player One selected Rock, Player Two selected Paper. Paper covers Rock. Player Two wins!");
                 else
-                    System.out.println("Player One selected Rock, Player Two selected Scissors. Player One wins!");
+                    System.out.println("Player One selected Rock, Player Two selected Scissors. Rock smashes Scissors. Player One wins!");
             }
             else if(playerOne.equals("P"))
             {
                 if(playerTwo.equals("P"))
                     System.out.println("Both players selected Paper. It's a tie!");
                 else if(playerTwo.equals("S"))
-                    System.out.println("Player One selected Paper, Player Two selected Scissors. Player Two wins!");
+                    System.out.println("Player One selected Paper, Player Two selected Scissors. Scissors cuts Paper. Player Two wins!");
                 else
-                    System.out.println("Player One selected Paper, Player Two selected Rock. Player One wins!");
+                    System.out.println("Player One selected Paper, Player Two selected Rock. Paper covers Rock. Player One wins!");
             }
             else
             {
                 if(playerTwo.equals("S"))
                     System.out.println("Both players selected Scissors. It's a tie!");
                 else if(playerTwo.equals("R"))
-                    System.out.println("Player One selected Scissors, Player Two selected Rock. Player Two wins!");
+                    System.out.println("Player One selected Scissors, Player Two selected Rock. Rock smashes Scissors. Player Two wins!");
                 else
-                    System.out.println("Player One selected Scissors, Player Two selected Paper. Player One wins!");
+                    System.out.println("Player One selected Scissors, Player Two selected Paper. Scissors cuts Paper. Player One wins!");
             }
             do
             {
@@ -100,5 +100,6 @@ public class RockPaperScissors
             while(!validPlayAgain);
         }
         while(newGame);
+        System.out.println("Thank you for playing!");
     }
 }
