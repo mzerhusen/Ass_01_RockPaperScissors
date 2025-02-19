@@ -100,6 +100,6 @@ public class RockPaperScissors
             while(!validPlayAgain);
         }
         while(newGame);
-        System.out.println("Thank you for playing!");
+        System.out.println("Thank you for playing!" );
     }
 }
