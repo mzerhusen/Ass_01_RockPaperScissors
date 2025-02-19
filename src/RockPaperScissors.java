@@ -18,7 +18,7 @@ public class RockPaperScissors
             //Get Player One input
             do
             {
-                System.out.println("Player One, please select 'R' for Rock, 'P' for Paper, or 'S' for Scissors: ");
+                System.out.print("Player One, please select 'R' for Rock, 'P' for Paper, or 'S' for Scissors: ");
                 playerOne = in.nextLine();
                 playerOne = playerOne.toUpperCase();
                 if(playerOne.equals("R") || playerOne.equals("P") || playerOne.equals("S"))
@@ -35,7 +35,7 @@ public class RockPaperScissors
             //Get Player Two input
             do
             {
-                System.out.println("Player two, please select 'R' for Rock, 'P' for Paper, or 'S' for Scissors: ");
+                System.out.print("Player Two, please select 'R' for Rock, 'P' for Paper, or 'S' for Scissors: ");
                 playerTwo = in.nextLine();
                 playerTwo = playerTwo.toUpperCase();
                 if(playerTwo.equals("R") || playerTwo.equals("P") || playerTwo.equals("S"))
